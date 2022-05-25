@@ -9,8 +9,39 @@ package package02;
  * @author SALA I
  */
 public class Enfermero {
-    private String nombrenfer;
-    private double saldoMens;
-    private String contrato;
-    private String nombramiento;
+    private String nombreH;
+    private String tipo;
+    private double sueldos;
+    
+    public Enfermero(String hop, String tp, double sl){
+        nombreH = hop;
+        tipo = tp;
+        sueldos = sl;
+    }
+
+    public void establecerNombreH(String e){
+        nombreH = e;
+    }
+    
+    public void establecerSueldo(double e){
+        sueldos = e;
+    }
+    
+    public void establecerTipo(String e){
+        tipo = e;
+    }
+    
+    //-------------------------------------------
+    public String obtenerNombreH(){
+        return nombreH;
+    }
+    
+    public double obtenerSueldo(){
+        return sueldos;
+    }
+    
+    public String obtenerTipo(){
+        return tipo;
+    }
+    
 }

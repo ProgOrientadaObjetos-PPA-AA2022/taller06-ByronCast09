@@ -9,7 +9,34 @@ package package02;
  * @author SALA I
  */
 public class Medico {
-    private String nombredoc;
-    private String especialidad;
-    private double sueldoMes;
+    private String nombreH;
+    private String especialidades;
+    private double sueldo;
+    
+    public Medico(String nb, String esp, double suel){
+        nombreH = nb;
+        especialidades = esp;
+        sueldo = suel;
+    }
+    
+    public void establecerNombreH(String e){
+        nombreH = e;
+    }
+    public void establecerEspec(String e){
+        especialidades = e;
+    }
+    public void establecerSueldo(double e){
+        sueldo = e;
+    }
+    
+    //-------------------------------------------
+    public String obtenerNombreH(){
+        return nombreH;
+    }
+    public String obtenerEspec(){
+        return especialidades;
+    }
+    public double obtenerSueldo(){
+        return sueldo;
+    }
 }
